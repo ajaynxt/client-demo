@@ -1,0 +1,25 @@
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="30" y1="20" x2="180" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5A623"/>
+      <stop offset="1" stop-color="#FFDA8A"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="210" y1="30" x2="650" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D7DCE6"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="180" fill="none"/>
+  <g>
+    <path d="M54 136L84 44H115L145 136H118L112 115H85L79 136H54ZM91 93H106L99 69L91 93Z" fill="url(#g1)"/>
+    <path d="M151 136V44H180L214 93V44H238V136H210L175 85V136H151Z" fill="url(#g1)"/>
+  </g>
+  <g>
+    <path d="M278 134V48H364V70H306V83H356V104H306V134H278Z" fill="url(#g2)"/>
+    <path d="M382 134V48H410V134H382Z" fill="url(#g2)"/>
+    <path d="M428 134V48H453L492 94V48H519V134H495L455 87V134H428Z" fill="url(#g2)"/>
+    <path d="M540 134V48H568V89L604 48H638L598 91L640 134H605L568 95V134H540Z" fill="url(#g2)"/>
+    <path d="M648 134V48H676V110H720V134H648Z" fill="url(#g2)"/>
+  </g>
+  <text x="279" y="160" fill="#AAB1BD" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="8">WEB DESIGN SHOWCASE</text>
+</svg>
