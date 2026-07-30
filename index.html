@@ -4,11 +4,94 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#171513">
-  <meta name="description" content="AJAY NXT premium client website portfolio with 20 live industry demos.">
-  <title>AJAY NXT | Website Portfolio</title>
+  <meta name="description" content="AJAY NXT website design portfolio featuring 20 fictional industry demo websites for hotels, restaurants, clinics, stores and service businesses. Explore design directions and request a custom website from Ajay Saini.">
+  <meta name="author" content="Ajay Saini">
+  <meta name="creator" content="AJAYNXT">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://ajaynxt.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AJAY NXT | Website Design Portfolio & 20 Live Industry Demos">
+  <meta property="og:description" content="Explore 20 fictional industry website demos and choose a direction for your custom business website.">
+  <meta property="og:url" content="https://ajaynxt.com/">
+  <meta property="og:site_name" content="AJAYNXT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AJAY NXT Website Portfolio">
+  <meta name="twitter:description" content="20 fictional industry demo websites for client review and custom website planning.">
+  <title>AJAY NXT | Website Design Portfolio & 20 Live Industry Demos</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ajaynxt.com/#organization",
+      "name": "AJAYNXT",
+      "alternateName": "AJAY NXT",
+      "url": "https://ajaynxt.com/",
+      "telephone": "+91-99295-62585",
+      "email": "ajayx3neha@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/ajay_nxt_/"
+      ],
+      "founder": {
+        "@id": "https://ajaynxt.com/#ajay-saini"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://ajaynxt.com/#ajay-saini",
+      "name": "Ajay Saini",
+      "url": "https://ajaynxt.com/",
+      "jobTitle": "Website Designer, Photo Editor and Video Editor",
+      "telephone": "+91-99295-62585",
+      "email": "ajayx3neha@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/ajay_nxt_/"
+      ],
+      "worksFor": {
+        "@id": "https://ajaynxt.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ajaynxt.com/#website",
+      "url": "https://ajaynxt.com/",
+      "name": "AJAY NXT",
+      "description": "Website design, photo editing and video editing portfolio by Ajay Saini.",
+      "creator": {
+        "@id": "https://ajaynxt.com/#ajay-saini"
+      },
+      "publisher": {
+        "@id": "https://ajaynxt.com/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://ajaynxt.com/#portfolio",
+      "url": "https://ajaynxt.com/#portfolio",
+      "name": "AJAY NXT Website Demo Portfolio",
+      "description": "A collection of 20 fictional industry website demos created for client review and custom website planning.",
+      "isPartOf": {
+        "@id": "https://ajaynxt.com/#website"
+      },
+      "creator": {
+        "@id": "https://ajaynxt.com/#ajay-saini"
+      },
+      "about": [
+        "Website design",
+        "Hotel websites",
+        "Restaurant websites",
+        "Clinic websites",
+        "Ecommerce websites",
+        "Service business websites"
+      ]
+    }
+  ]
+}
+  </script>
 
   <style>
     /* Contact update contained entirely inside index.html */
@@ -456,8 +539,92 @@
     }
   </style>
 
+
+  <style id="ajaynxt-portfolio-notice-styles">
+    .portfolio-demo-notice{
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:10000;
+      min-height:36px;
+      padding:8px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      background:rgba(23,21,19,.97);
+      border-bottom:1px solid rgba(243,107,44,.34);
+      color:rgba(255,255,255,.76);
+      font-family:Inter,Arial,sans-serif;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.10em;
+      text-align:center;
+      text-transform:uppercase;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+    }
+    .portfolio-demo-notice a{
+      color:#ff8d59;
+      font-weight:900;
+      text-decoration:none;
+      letter-spacing:.14em;
+    }
+    .portfolio-demo-notice i{
+      width:3px;
+      height:3px;
+      flex:0 0 auto;
+      border-radius:50%;
+      background:#ff8d59;
+    }
+    .portfolio-demo-notice strong{
+      color:#fff;
+      font-size:9px;
+      font-weight:650;
+    }
+    body{padding-top:36px}
+    .site-header{top:36px!important}
+    .portfolio-demo-explainer{
+      margin-top:18px;
+      padding:13px 15px;
+      border-left:3px solid var(--accent);
+      border-radius:0 12px 12px 0;
+      background:rgba(243,107,44,.07);
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.65;
+      max-width:640px;
+    }
+    @media(max-width:700px){
+      .portfolio-demo-notice{
+        min-height:44px;
+        padding:7px 10px;
+        gap:5px;
+        flex-wrap:wrap;
+        line-height:1.35;
+        font-size:8px;
+        letter-spacing:.07em;
+      }
+      .portfolio-demo-notice strong{
+        width:100%;
+        font-size:7px;
+      }
+      .portfolio-demo-notice i{display:none}
+      body{padding-top:44px}
+      .site-header{top:44px!important}
+    }
+  </style>
+
 </head>
 <body>
+  
+  <div class="portfolio-demo-notice" role="note" aria-label="Portfolio demo notice">
+    <a href="https://ajaynxt.com/" aria-label="AJAYNXT home">AJAYNXT PORTFOLIO</a>
+    <i aria-hidden="true"></i>
+    <span>20 fictional demo websites for client review</span>
+    <i aria-hidden="true"></i>
+    <strong>Each demo is a design concept, not the official website of any business shown</strong>
+  </div>
+
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand real-brand" href="#top" aria-label="AJAY NXT home">
@@ -535,6 +702,10 @@
           <h2>Find the right starting point.</h2>
         </div>
         <p>These are not fixed templates. Each one is a design direction that can be rebuilt around your brand, content and business goals.</p>
+        <div class="portfolio-demo-explainer">
+          <strong>Demo clarity:</strong> All listed brands, services, prices, availability and business identities inside the demos are fictional examples. AJAYNXT is the real website-design portfolio and contact point.
+        </div>
+
       </div>
 
       <div class="toolbar reveal">
@@ -651,7 +822,7 @@
         <a href="mailto:ajayx3neha@gmail.com">ajayx3neha@gmail.com</a>
         <a href="https://www.instagram.com/ajay_nxt_/" target="_blank" rel="noopener">@ajay_nxt_</a>
       </div>
-      <p>© <span id="year"></span> AJAY NXT. Crafted for client presentations.</p>
+      <p>© <span id="year"></span> AJAY NXT. Real portfolio website · Demo brands shown inside the directory are fictional concepts.</p>
     </div>
   </footer>
 
