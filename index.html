@@ -158,6 +158,144 @@
     }
   </style>
 
+
+  <style id="hero-center-update">
+    /* Hero layout update: photo in the center/main focus, text on side */
+    .hero.hero-centered-layout{
+      display:grid;
+      grid-template-columns:minmax(380px, 560px) minmax(320px, 1fr);
+      align-items:center;
+      justify-content:center;
+      gap:clamp(34px,5vw,82px);
+      min-height:calc(100dvh - 82px);
+      padding-block:58px 92px;
+    }
+    .hero-copy-side{
+      max-width:620px;
+    }
+    .hero-copy-side h1{
+      font-size:clamp(52px,6vw,88px);
+      margin:0;
+      max-width:650px;
+    }
+    .hero-copy-side .hero-text{
+      max-width:560px;
+    }
+    .hero-art{
+      min-height:640px;
+      display:grid;
+      place-items:center;
+      position:relative;
+      isolation:isolate;
+    }
+    .hero-photo-frame.hero-photo-frame-centered{
+      width:min(100%, 520px);
+      height:640px;
+      margin-inline:auto;
+      border-radius:36px;
+      overflow:hidden;
+      background:linear-gradient(180deg,#201b18 0%, #171413 100%);
+      border:1px solid rgba(208,197,186,.55);
+      box-shadow:0 38px 95px rgba(31,24,18,.20), 0 10px 26px rgba(31,24,18,.12);
+      position:relative;
+      z-index:2;
+    }
+    .hero-photo-frame.hero-photo-frame-centered::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(255,255,255,.10), transparent 32%),
+        linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+      pointer-events:none;
+      z-index:2;
+    }
+    .hero-person-photo{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      object-position:center bottom;
+      display:block;
+    }
+    .hero-photo-bg-one{
+      width:330px;
+      height:330px;
+      background:rgba(255,189,157,.50);
+      left:-25px;
+      top:82px;
+      position:absolute;
+      border-radius:50%;
+      z-index:0;
+      filter:blur(2px);
+    }
+    .hero-photo-bg-two{
+      width:220px;
+      height:220px;
+      background:rgba(211,202,255,.74);
+      right:-14px;
+      bottom:38px;
+      position:absolute;
+      border-radius:50%;
+      z-index:0;
+      filter:blur(2px);
+    }
+    .hero-badge-left{
+      left:-18px;
+      top:132px;
+    }
+    .hero-badge-right{
+      right:-18px;
+      bottom:92px;
+    }
+    @media(max-width:980px){
+      .hero.hero-centered-layout{
+        grid-template-columns:1fr;
+        gap:26px;
+        min-height:auto;
+        padding-block:48px 70px;
+      }
+      .hero-art{
+        order:1;
+        min-height:560px;
+      }
+      .hero-copy-side{
+        order:2;
+        max-width:100%;
+      }
+      .hero-photo-frame.hero-photo-frame-centered{
+        width:min(88vw,520px);
+        height:min(78vw,620px);
+        min-height:500px;
+      }
+    }
+    @media(max-width:680px){
+      .hero.hero-centered-layout{
+        padding-block:42px 58px;
+      }
+      .hero-art{
+        min-height:420px;
+      }
+      .hero-photo-frame.hero-photo-frame-centered{
+        width:min(92vw,390px);
+        height:430px;
+        border-radius:24px;
+      }
+      .hero-copy-side h1{
+        font-size:clamp(46px,15.5vw,70px);
+      }
+      .hero-badge-left{
+        left:-2px;
+        top:58px;
+      }
+      .hero-badge-right{
+        right:-2px;
+        bottom:34px;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -178,32 +316,12 @@
   </header>
 
   <main id="top">
-    <section class="hero shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> WEBSITE DESIGN · PHOTO EDITING · VIDEO EDITING</p>
-        <h1>Websites that look premium.<br><em>And bring real business.</em></h1>
-        <p class="hero-text">Explore 20 live website demos for hotels, restaurants, clinics, stores and service brands. Choose the design direction you like, then customise the sections, style and features for your business.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#portfolio">Explore 20 live demos <svg><use href="assets/icons.svg#i-arrow"></use></svg></a>
-          <button class="button button-ghost" data-open-guide>How clients should review</button>
-        </div>
-        <div class="hero-contact-line" aria-label="AJAY NXT contact information">
-          <a href="tel:+919929562585">📞 +91 99295 62585</a>
-          <span></span>
-          <a href="mailto:ajayx3neha@gmail.com">✉ ajayx3neha@gmail.com</a>
-        </div>
-        <div class="hero-proof" aria-label="Portfolio highlights">
-          <div><strong>20</strong><span>Live website demos</span></div>
-          <div><strong>12+</strong><span>Business industries</span></div>
-          <div><strong>100%</strong><span>Customisable</span></div>
-        </div>
-      </div>
-
+    <section class="hero shell hero-centered-layout">
       <div class="hero-art reveal" aria-label="AJAY NXT founder portrait">
         <div class="hero-photo-bg hero-photo-bg-one" aria-hidden="true"></div>
         <div class="hero-photo-bg hero-photo-bg-two" aria-hidden="true"></div>
 
-        <div class="hero-photo-frame">
+        <div class="hero-photo-frame hero-photo-frame-centered">
           <img src="assets/ajay-hero-portrait.webp"
                alt="Ajay NXT portrait"
                class="hero-person-photo"
@@ -217,6 +335,26 @@
         <div class="hero-badge hero-badge-right">
           <span class="dot"></span>
           <strong>Photo & Video Editing</strong>
+        </div>
+      </div>
+
+      <div class="hero-copy reveal hero-copy-side">
+        <p class="eyebrow"><span></span> WEBSITE DESIGN · PHOTO EDITING · VIDEO EDITING</p>
+        <h1>Premium websites.<br><em>Designed to get real clients.</em></h1>
+        <p class="hero-text">Explore 20 live website demos for hotels, restaurants, clinics, stores and service brands. Choose the design direction you like and turn it into a custom website for your own business.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#portfolio">Explore 20 live demos <svg><use href="assets/icons.svg#i-arrow"></use></svg></a>
+          <button class="button button-ghost" data-open-guide>How clients should review</button>
+        </div>
+        <div class="hero-contact-line" aria-label="AJAY NXT contact information">
+          <a href="tel:+919929562585">📞 +91 99295 62585</a>
+          <span></span>
+          <a href="mailto:ajayx3neha@gmail.com">✉ ajayx3neha@gmail.com</a>
+        </div>
+        <div class="hero-proof" aria-label="Portfolio highlights">
+          <div><strong>20</strong><span>Live website demos</span></div>
+          <div><strong>12+</strong><span>Business industries</span></div>
+          <div><strong>100%</strong><span>Customisable</span></div>
         </div>
       </div>
     </section>
