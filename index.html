@@ -298,8 +298,8 @@
       inset:0;
       width:100%;
       height:100%;
-      object-fit:contain;
-      object-position:center bottom;
+      object-fit:cover;
+      object-position:center top;
       display:block;
     }
     .hero-photo-bg-one{
@@ -323,14 +323,6 @@
       border-radius:50%;
       z-index:0;
       filter:blur(2px);
-    }
-    .hero-badge-left{
-      left:-18px;
-      top:132px;
-    }
-    .hero-badge-right{
-      right:-18px;
-      bottom:92px;
     }
     @media(max-width:980px){
       .hero.hero-centered-layout{
@@ -367,14 +359,6 @@
       }
       .hero-copy-side h1{
         font-size:clamp(46px,15.5vw,70px);
-      }
-      .hero-badge-left{
-        left:-2px;
-        top:58px;
-      }
-      .hero-badge-right{
-        right:-2px;
-        bottom:34px;
       }
     }
   </style>
@@ -453,16 +437,6 @@
         font-size:8px;
       }
 
-      .hero-badge-left{
-        left:-8px;
-        top:92px;
-      }
-
-      .hero-badge-right{
-        right:-8px;
-        bottom:65px;
-      }
-
       .hero-photo-bg-one{
         width:270px;
         height:270px;
@@ -504,14 +478,6 @@
       .hero-proof{
         margin-top:13px;
         padding-top:12px;
-      }
-
-      .hero-badge-left{
-        top:72px;
-      }
-
-      .hero-badge-right{
-        bottom:48px;
       }
     }
   </style>
@@ -652,18 +618,9 @@
           <img src="assets/ajay-hero-portrait.webp"
                alt="Ajay NXT portrait"
                class="hero-person-photo"
-               width="1536" height="1024">
+               width="1122" height="1402">
         </div>
-
-        <div class="hero-badge hero-badge-left">
-          <small>AJAY NXT</small>
-          <strong>Website Designer</strong>
-        </div>
-        <div class="hero-badge hero-badge-right">
-          <span class="dot"></span>
-          <strong>Photo & Video Editing</strong>
-        </div>
-      </div>
+</div>
 
       <div class="hero-copy reveal hero-copy-side">
         <p class="eyebrow"><span></span> WEBSITE DESIGN · PHOTO EDITING · VIDEO EDITING</p>
