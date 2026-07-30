@@ -433,6 +433,29 @@
     }
   </style>
 
+
+  <style id="guide-backdrop-light-update">
+    /* Light premium overlay for the client review guide */
+    .guide-drawer .guide-backdrop{
+      background:rgba(244,240,233,.38) !important;
+      backdrop-filter:blur(6px) saturate(.9) !important;
+      -webkit-backdrop-filter:blur(6px) saturate(.9) !important;
+    }
+
+    .guide-drawer aside{
+      box-shadow:-24px 0 70px rgba(31,24,18,.13);
+      border-left:1px solid rgba(205,195,183,.8);
+    }
+
+    @media(max-width:680px){
+      .guide-drawer .guide-backdrop{
+        background:rgba(244,240,233,.52) !important;
+        backdrop-filter:blur(4px) !important;
+        -webkit-backdrop-filter:blur(4px) !important;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
